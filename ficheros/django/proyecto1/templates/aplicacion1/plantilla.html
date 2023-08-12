@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    {% block cabecera %}
+        <!-- Aqui ira el titulo de cada pagina html -->
+    {% endblock %}
+    <link rel="stylesheet" href="{% static "css/estilo2.css" %}">
+
+</head>
+<body>
+    <h1>Portada de nuestro sitio web</h1>
+    {% block bloque1 %}
+        <!-- Aqui va el contenido propio de cada pagina -->
+    {% endblock %}
+</body>
+</html>

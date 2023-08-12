@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "aplicacion1/plantilla.html" %}
+{% load misfiltros %}
+{% block cabecera %}
+    <!-- Aqui ira el titulo de cada pagina html -->
+    <title>Pagina 4</title>
+{% endblock %}
+{% block bloque1 %}
+    <!-- Aqui va el contenido propio de cada pagina -->
+    <h1>Estamos en la Pagina 4</h1>
+    <a href="{% url 'aplicacion1:pagina5' %}">Ir a la pagina 5</a>
+    <h3>{{ texto|recortar:'Hola' }}</h3>
+    <h3>{{ numero|add:'200' }}</h3>
+    <h3>{{ hora|default:"No hay datos de hora" }}</h3>
+{% endblock %}

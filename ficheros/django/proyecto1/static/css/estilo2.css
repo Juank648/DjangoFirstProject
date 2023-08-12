@@ -1,0 +1,13 @@
+h1{
+    color: blueviolet;
+}
+
+table, td{
+    border: solid 3px greenyellow;
+}
+
+th{
+    border: solid 3px palevioletred;
+    background-color: aqua;
+    
+}
